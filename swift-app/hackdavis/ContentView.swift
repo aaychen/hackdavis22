@@ -3,12 +3,11 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack(alignment: .center) {
-            Logo()
-                .offset(y: 200)
-                .padding(.bottom, -130)
-            
             NavigationView {
                 VStack {
+                    Logo()
+                        .offset(y: 200)
+                        .padding(.bottom, -130)
                     VStack(alignment: .center) {
                         NavigationLink(destination: LoginView()) {
                             Text("Log In")
